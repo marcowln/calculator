@@ -30,7 +30,7 @@ def main() -> None:
     bmi = calculate_bmi(weight, height)
     category = classify_bmi(bmi)
 
-    print(f"Dein BMI beträgt: {bmi:.2f}")
+    print(f"Dein berechneter BMI beträgt: {bmi:.2f}")
     print(f"Kategorie: {category}")
 
 
