@@ -32,6 +32,7 @@ def main() -> None:
 
     print(f"Dein berechneter BMI beträgt: {bmi:.2f}")
     print(f"Kategorie: {category}")
+    print("Hinweis: Der BMI ist nur ein grober Richtwert.")
 
 
 if __name__ == "__main__":
