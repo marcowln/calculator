@@ -10,6 +10,12 @@ def calculate_bmi(weight_kg: float, height_m: float) -> float:
     return weight_kg / height_m**2
 
 
+def round_bmi(bmi: float) -> float:
+    """Rundet den BMI auf zwei Nachkommastellen."""
+
+    return round(bmi, 2)
+
+
 def classify_bmi(bmi: float) -> str:
     """Ordnet einen BMI grob einer Kategorie zu."""
 
@@ -29,8 +35,9 @@ def main() -> None:
 
     bmi = calculate_bmi(weight, height)
     category = classify_bmi(bmi)
+    rounded_bmi = round_bmi(bmi)
 
-    print(f"Dein berechneter BMI beträgt: {bmi:.2f}")
+    print(f"Dein berechneter BMI beträgt: {rounded_bmi:.2f}")
     print(f"Kategorie: {category}")
     print("Hinweis: Der BMI ist nur ein grober Richtwert.")
 
