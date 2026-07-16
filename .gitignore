@@ -1,11 +1,11 @@
-# Python virtual environment
+# Virtual environment
 .venv/
 
-# Python cache
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 
-# PyInstaller
+# Build artifacts
 build/
 dist/
 *.spec
@@ -13,5 +13,8 @@ dist/
 # macOS
 .DS_Store
 
-# Secrets
+# Environment variables
 .env
+
+# VS Code
+.vscode/
